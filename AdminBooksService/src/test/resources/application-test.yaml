@@ -1,0 +1,26 @@
+
+#jwt values
+jwt_secret: REPLACE_THIS_WITH_YOUR_SECRET
+
+#postgres config
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-chj56ke4dad01ajnopa0-a.frankfurt-postgres.render.com:5432/askme_api_database
+    username: admin
+    password: s9oyazcDMsUgdyX0VJOOrvhJBBMCt8lr
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# JPA settings
+#spring.jpa.database-platform=org.hibernate.dialect.Oracle12cDialect
+#spring.jpa.hibernate.use-new-id-generator-mappings=false
+#spring.jpa.properties.hibernate.format_sql=true
+#spring.jpa.properties.hibernate.connection.characterEncoding=utf-8
+#spring.jpa.properties.hibernate.connection.CharSet=utf-8
+#spring.jpa.properties.hibernate.connection.useUnicode=true
